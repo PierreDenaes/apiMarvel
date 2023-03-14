@@ -64,7 +64,7 @@ function createHtml(data) {
 const ts = "1";
 const hash = "f010914fff3fb4aa68bf6fba749406ed";
 const publicKey = "2a26c9338b02d55b270cbb6d895e6d8e";
-const apiUrl = "https://gateway.marvel.com/v1/public/characters";
+const apiUrl = "http://gateway.marvel.com/v1/public/characters";
 
 // Appel de la fonction principale pour charger les données
 loadData();
