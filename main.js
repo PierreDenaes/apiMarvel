@@ -64,7 +64,7 @@ function createHtml(data) {
 const ts = "1";
 const hash = "f010914fff3fb4aa68bf6fba749406ed";
 const publicKey = "2a26c9338b02d55b270cbb6d895e6d8e";
-const apiUrl = "http://gateway.marvel.com/v1/public/characters";
+const apiUrl = "https://gateway.marvel.com/v1/public/characters";
 
 // Appel de la fonction principale pour charger les données
 loadData();
@@ -81,7 +81,7 @@ async function loadData() {
 
     // Génération du HTML pour la liste déroulante
     const dropdownHtml = data.data.results
-      .filter(item => item.description && item.thumbnail.path !== "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available")
+      .filter(item => item.description && item.thumbnail.path !== "https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available")
       .map(item => `<option class="dropdown-item" value="${item.id}">${item.name}</option>`)
       .join("");
     const dropdown = document.querySelector("#dropMenu");
